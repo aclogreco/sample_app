@@ -66,5 +66,5 @@ SampleApp::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   
   # Disable updating by the Sass plugin
-#  Sass::Plugin.options[:never_update] = true
+  # Sass::Plugin.options[:never_update] = true
 end
