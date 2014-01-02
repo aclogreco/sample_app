@@ -1,4 +1,5 @@
 require 'spec_helper'
+include AuthenticationPagesSpecHelper
 
 describe "Authentication" do
   
@@ -22,7 +23,8 @@ describe "Authentication" do
       
       describe "after visiting another page" do
         before { click_link "Home" }
-        it { should_not have_selector('div.alert.alert-error') }
+        # it { should_not have_selector('div.alert.alert-error') }
+        it { should_not have_error_message('') }
       end
     end
     
